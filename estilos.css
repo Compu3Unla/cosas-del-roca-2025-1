@@ -25,6 +25,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #F0F0F0;
 }
 
 /*web*/
@@ -57,8 +58,65 @@ h5{
 
 /*header*/
 
-nav{
+header{
+    background-color: #008EDB;
+    width: 100vw;
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+header div{
+    padding: 13px 200px 13px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botonera-header{
     font-size: 20px;
     font-weight: 700;
     color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.boton-nav{
+    transition: color 200ms ease-in-out;
+}
+
+.boton-nav :hover{
+    color: #FFED00;
+}
+
+/*footer*/
+
+footer{
+    background-color: #008EDB;
+    color: #F0F0F0;
+    width: 100vw;
+    border-radius: 80px 80px 0px 0px;
+}
+
+.iconos-redes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 44px;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 56px;
+}
+
+.div-footer{
+    padding: 37px 200px 37px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
