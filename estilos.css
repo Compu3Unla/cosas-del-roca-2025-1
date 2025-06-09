@@ -189,3 +189,146 @@ footer{
     margin: 150px 100px 50px 300px;
 }
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACTO */
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+/*columna derecha*/
+.izquierda{
+    display: flex;
+    flex-direction: column;
+    max-width: 836px;
+}
+
+.arriba-izq{
+    display: flex;
+    align-items: start;
+    gap: 9px;
+}
+
+.texto-izq{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+/*columna derecha   FORMULARIO*/
+.derecha{
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-arriba{
+    border-radius: 50px 0px 0px 0px;
+    background-color: #008EDB;
+}
+.form-abajo{
+    background-color: #008EDB;
+    border-radius: 0px 0px 49px 49px;
+    padding: 33px 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIN CONTACTO */
+
