@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8" />
     <title>Contacto</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <header></header>
+    <header>
+        <div>
+            <a href="index.html"><img src="img/vectores/logo.svg" alt="Logo Cosas del Roca" width="151px" height="37px"></a>
+            <nav >
+                <ul class="botonera-header">
+                    <li class="boton-nav"><a href="horarios.html">horarios</a></li>
+                    <li class="boton-nav"><a href="memes.html">memes</a></li>
+                    <li class="boton-nav"><a href="tienda.html">tienda</a></li>
+                    <li class="boton-nav"><a href="contacto.html">contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <section class="contacto">
             <div class="izquierda">
-                <div class="c-izq-arriba">
+                <div class="arriba-izq">
+                    <img src="img/vectores/pixeles-contactos-1.svg"/>
                     <div class="texto-izq">
                         <h2>¿Tenes data o consulta? Hablanos...</h2>
                         <p>Si querés sumar info, compartir una experiencia o avisar sobre algún problema en el servicio, este es tu espacio.
@@ -20,10 +34,36 @@
                             ¡Gracias por ser parte y sumar tu voz al viaje!</p>
                     </div>
                 </div>
+                <img src="img/vectores/lineas.svg" width="720px"/>
+            </div>
+            <div class="derecha">
+                <article class="formulario">
+                    <div class="form-arriba">
+                        <p>Tu opinión nos importa (¡aunque no lo creas!) Contanos, ¿qué está pasando?</p>
+                    </div>
+                    <div class="form-abajo">
+                        <input type="text" name="Nombre y apellido" id="Nombre y apellido" maxlength="30" placeholder="Nombre y apellido" required>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                        <input type="email" name="Correo electronico" id="Correo electronico" placeholder="Correo electrónico" required>
+                        <textarea name="Comentario" id="Comentario" placeholder="Comentario"></textarea>
+                    </div>
+                </article>
+                <img src="img/vectores/pixeles-contacto-2.svg"/>
             </div>
         </section>
-
     </main>
-    <footer></footer>
+    <footer>
+        <div class="div-footer">
+            <p>Cosas del Roca - Copyright © 2014 - 2025</p>
+            <div class="redes-sociales">
+                <p>Redes sociales</p>
+                <ul class="iconos-redes">
+                    <li><a href="https://www.facebook.com/CosasDelRocaOficial/?locale=es_LA" target="_blank"><img src="img/vectores/icono-facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/cosasdelroca/?hl=es-la" target="_blank"><img src="img/vectores/icono-instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://x.com/CosasDelRoca" target="_blank"><img src="img/vectores/icono-x.svg" alt="X"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
