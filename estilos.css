@@ -8,7 +8,7 @@
 
 * {
     font-family: "Funnel Display", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     font-size: 18px;
     padding: 0px;
@@ -60,7 +60,7 @@ h5{
 
 header{
     background-color: #008EDB;
-    width: 100vw;
+    width: 100%;
     border-radius: 0px 0px 30px 30px;
     display: flex;
     flex-direction: column;
@@ -96,7 +96,7 @@ header div{
 footer{
     background-color: #008EDB;
     color: #F0F0F0;
-    width: 100vw;
+    width: 100%;
     border-radius: 80px 80px 0px 0px;
 }
 
@@ -119,4 +119,338 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*index*/
+
+.separador-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estado-servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+.titulo-box-azul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.box-azul{
+    color: #F0F0F0;
+    background-color: #008EDB;
+    padding: 10px 26px;
+}
+
+.tabla-estados{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.estado-ramales{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 45px;
+}
+
+.r-electricos-titulo{
+    color: #F0F0F0;
+    background-color: #008EDB;
+    border-radius: 50px 0px 0px 0px;
+    padding: 15px 97px;
+}
+
+.r-diesel-titulo{
+    color: #F0F0F0;
+    background-color: #008EDB;
+    padding: 15px 130px;
+}
+
+.r-larga-titulo{
+    color: #F0F0F0;
+    background-color: #008EDB;
+    border-radius: 0px 50px 0px 0px;
+    padding: 15px 61px;
+}
+
+.ramales{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.lista-ramales{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.lista-ramales li{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.p-ramales{
+    color: #1D1D1B;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.referencia{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 45px;
+}
+
+.referencia li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
 }
