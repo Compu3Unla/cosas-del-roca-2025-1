@@ -1093,18 +1093,18 @@ footer{
   z-index: 1;
 }
 
-.slides {
+.slides-meme {
   display: flex;
   width: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
-.slide {
+.slide-meme {
   width: 100%;
   flex-shrink: 0;
 }
 
-.slide img {
+.slide-meme img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1134,15 +1134,15 @@ input[name="radio-btn"] {
   transition: background-color 0.3s;
 }
 
-input#radio1:checked ~ .slides {
+input#radio1:checked ~ .slides-meme {
   transform: translateX(0%);
 }
 
-input#radio2:checked ~ .slides {
+input#radio2:checked ~ .slides-meme {
   transform: translateX(-100%);
 }
 
-input#radio3:checked ~ .slides {
+input#radio3:checked ~ .slides-meme {
   transform: translateX(-200%);
 }
 
