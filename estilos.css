@@ -8,7 +8,7 @@
 
 * {
     font-family: "Funnel Display", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     font-size: 18px;
     padding: 0px;
@@ -60,7 +60,7 @@ h5{
 
 header{
     background-color: #008EDB;
-    width: 100vw;
+    width: 100%;
     border-radius: 0px 0px 30px 30px;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,7 @@ header div{
 footer{
     background-color: #008EDB;
     color: #F0F0F0;
-    width: 100vw;
+    width: 100%;
     border-radius: 80px 80px 0px 0px;
 }
 
@@ -123,22 +123,108 @@ footer{
 }
 
 
+/*index*/
 
+.separador-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.estado-servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
 
+.titulo-box-azul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
+.box-azul{
+    color: #F0F0F0;
+    background-color: #008EDB;
+    padding: 10px 26px;
+}
 
+.tabla-estados{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+}
 
+.estado-ramales{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 45px;
+}
 
+.r-electricos-titulo{
+    color: #F0F0F0;
+    background-color: #008EDB;
+    border-radius: 50px 0px 0px 0px;
+    padding: 15px 97px;
+}
 
+.r-diesel-titulo{
+    color: #F0F0F0;
+    background-color: #008EDB;
+    padding: 15px 130px;
+}
 
+.r-larga-titulo{
+    color: #F0F0F0;
+    background-color: #008EDB;
+    border-radius: 0px 50px 0px 0px;
+    padding: 15px 61px;
+}
 
+.ramales{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+}
 
+.lista-ramales{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
 
+.lista-ramales li{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 40px;
+}
 
+.p-ramales{
+    color: #1D1D1B;
+    font-size: 22px;
+    font-weight: 600;
+}
 
+.referencia{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 45px;
+}
 
-
+.referencia li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+}
 
 /*-----------------------------TIENDA-------------------------------*/
 .portada {
@@ -195,79 +281,39 @@ footer{
  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CONTACTO */
+/*---------------------------CONTACTO----------------------------- */
 .contacto{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
+    margin-top: 100px;
+    margin-bottom: 52px;
+    gap: 40px;
 }
 /*columna derecha*/
 .izquierda{
     display: flex;
     flex-direction: column;
     max-width: 836px;
+    gap: 46px;
+
 }
 
 .arriba-izq{
     display: flex;
     align-items: start;
-    gap: 9px;
+    gap: 10px;
+}
+.texto-izq h2{
+    color: #008EDB;
 }
 
 .texto-izq{
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 30px;
+    max-width: 834px;
 }
 /*columna derecha   FORMULARIO*/
 .derecha{
@@ -275,17 +321,92 @@ footer{
     align-items: flex-start;
 }
 
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 .form-arriba{
+    padding: 23px 75px 23px 49px;
     border-radius: 50px 0px 0px 0px;
     background-color: #008EDB;
 }
+.form-arriba p{
+    color: #F0F0F0;
+}
+
+/* no sé cómo cambiar el color de Nombre y Apellido, Teléfono etc del form, intenté dandole clases etc pero no hay caso(al final de esto está el id con los que intenté)
+logré que al tipear se ponga en blanco... también me gustaría saber si en Seleccione una estación se puede cambiar el color de las opciones.*/
+
 .form-abajo{
     background-color: #008EDB;
     border-radius: 0px 0px 49px 49px;
     padding: 33px 39px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 5px 39px 33px;
+    color: #F0F0F0;
+}
+
+.casillas{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.botones-form{
+    display: flex;
+    justify-content: space-between;
+}
+.boton-enviar{
+    background-color: #008EDB;
+    border: #F0F0F0 2px solid;
+}
+
+input{
+    background-color: #008EDB;
+    border: 0px;
+    border-bottom: #F0F0F0 2px solid;
+    padding-top: 20px;
+    color: #F0F0F0;
+}
+
+select{
+    background-color: #008EDB;
+    border: 0px;
+    border-bottom: #F0F0F0 2px solid;
+    padding-top: 20px;
+}
+textarea{
+    background-color: #008EDB;
+    border: 0px;
+    border-bottom: #F0F0F0 2px solid;
+    padding-top: 20px;
+}
+
+#comentario{
+    color: #F0F0F0;
+}
+
+#telefono{
+    color: #F0F0F0;
+}
+
+
+/*--------------------------MEMES----------------------*/
+
+.galeria{
+    padding-top: 80px;
+}
+.grid-container{
+    width: 50%;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 212px 212px 212px 212px;
+    grid-gap: 20px;
 }
 
 
@@ -333,7 +454,6 @@ footer{
 
 
 
-/* FIN CONTACTO */
 
 
 
@@ -513,9 +633,7 @@ footer{
 
 
 
-
-
-/* CONTACTO */
+/* HORARIOS */
 
 .alerta{
     display: flex;
