@@ -237,7 +237,6 @@ footer{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    dlockisplay: b; 
 }
 
 .texto-superpuesto{
@@ -272,16 +271,172 @@ footer{
 
 .donar {
     display: flex;
-    margin: 150px 200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 10%;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+}
+
+.texto-donar {
+    flex: 1;
+    max-width: 84vh;
 }
 
 .texto-donar h3 {
     color: #008EDB;
+    font-weight: 600;
+    font-size: 1.6em;
+    margin-bottom: 20px;
 }
- 
+
+.texto-donar p {
+    color: #1D1D1B;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.boton-donar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.btn-donar {
+    background-color: #008EDB;
+    color: white;
+    text-decoration: none;
+    padding: 10px 80px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-donar:hover {
+    background-color: #FFED00;
+    color: #1D1D1B;
+}
 
 
-/*---------------------------CONTACTO----------------------------- */
+/*-----Seccion remeras------*/
+.tienda {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #008EDB;
+}
+
+.tienda img{
+    width: 100%;
+}
+
+.tienda h2 {
+    font-size: 1.8em;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: #F0F0F0;
+}
+
+.tienda p {
+    font-size: 20px;
+    font-weight: lighter;
+    max-width: 900px;
+    margin: 0 auto 100px auto;
+    color: #F0F0F0;
+}
+
+.grid-remeras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.producto {
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.producto img {
+    width: 80%;
+    margin: 30px 20px 0 20px;
+}
+
+.info {
+    padding: 15px;
+    margin-left: 25px;
+}
+
+.info .titulo {
+    color: #008EDB;
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.info p {
+    margin-bottom: 0;
+    color: #008EDB;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.info button {
+    background-color: #0087d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.info button:hover {
+    background-color: #FFED00;
+    color: #1D1D1B;
+}
+
+.fila-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.fila-info p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.fila-info button {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------CONTACTO-----------------------------*/
 .contacto{
     display: flex;
     justify-content: space-between;
@@ -633,7 +788,7 @@ textarea{
 
 
 
-/* HORARIOS */
+/*---------------------------HORARIOS-----------------------------*/
 
 .alerta{
     display: flex;
