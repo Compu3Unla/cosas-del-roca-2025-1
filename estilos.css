@@ -281,30 +281,39 @@ footer{
  
 
 
-/* CONTACTO */
+/*---------------------------CONTACTO----------------------------- */
 .contacto{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
+    margin-top: 100px;
+    margin-bottom: 52px;
+    gap: 40px;
 }
 /*columna derecha*/
 .izquierda{
     display: flex;
     flex-direction: column;
     max-width: 836px;
+    gap: 46px;
+
 }
 
 .arriba-izq{
     display: flex;
     align-items: start;
-    gap: 9px;
+    gap: 10px;
+}
+.texto-izq h2{
+    color: #008EDB;
 }
 
 .texto-izq{
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 30px;
+    max-width: 834px;
 }
 /*columna derecha   FORMULARIO*/
 .derecha{
@@ -312,17 +321,92 @@ footer{
     align-items: flex-start;
 }
 
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 .form-arriba{
+    padding: 23px 75px 23px 49px;
     border-radius: 50px 0px 0px 0px;
     background-color: #008EDB;
 }
+.form-arriba p{
+    color: #F0F0F0;
+}
+
+/* no sé cómo cambiar el color de Nombre y Apellido, Teléfono etc del form, intenté dandole clases etc pero no hay caso(al final de esto está el id con los que intenté)
+logré que al tipear se ponga en blanco... también me gustaría saber si en Seleccione una estación se puede cambiar el color de las opciones.*/
+
 .form-abajo{
     background-color: #008EDB;
     border-radius: 0px 0px 49px 49px;
     padding: 33px 39px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 5px 39px 33px;
+    color: #F0F0F0;
+}
+
+.casillas{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.botones-form{
+    display: flex;
+    justify-content: space-between;
+}
+.boton-enviar{
+    background-color: #008EDB;
+    border: #F0F0F0 2px solid;
+}
+
+input{
+    background-color: #008EDB;
+    border: 0px;
+    border-bottom: #F0F0F0 2px solid;
+    padding-top: 20px;
+    color: #F0F0F0;
+}
+
+select{
+    background-color: #008EDB;
+    border: 0px;
+    border-bottom: #F0F0F0 2px solid;
+    padding-top: 20px;
+}
+textarea{
+    background-color: #008EDB;
+    border: 0px;
+    border-bottom: #F0F0F0 2px solid;
+    padding-top: 20px;
+}
+
+#comentario{
+    color: #F0F0F0;
+}
+
+#telefono{
+    color: #F0F0F0;
+}
+
+
+/*--------------------------MEMES----------------------*/
+
+.galeria{
+    padding-top: 80px;
+}
+.grid-container{
+    width: 50%;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 212px 212px 212px 212px;
+    grid-gap: 20px;
 }
 
 
@@ -367,10 +451,6 @@ footer{
 
 
 
-
-
-
-/* FIN CONTACTO */
 
 
 

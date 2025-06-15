@@ -27,8 +27,8 @@
                     <div class="texto-izq">
                         <h2>¿Tenes data o consulta? Hablanos...</h2>
                         <p>Si querés sumar info, compartir una experiencia o avisar sobre algún problema en el servicio, este es tu espacio.
-                            Tu mensaje llega mas rápido que el tren en hora pico (casi!) 
-                            Contanos lo que viste, lo que pasó o lo que pensás. Nos importa lo que tenés para decir: cada dato, anécdota o queja
+                            Tu mensaje llega mas rápido que el tren en hora pico (casi!)</p>
+                        <p>Contanos lo que viste, lo que pasó o lo que pensás. Nos importa lo que tenés para decir: cada dato, anécdota o queja
                             puede ayudar a mejorar la experiencia de todas las personas que viajan.
                             No hace falta que sea largo ni perfecto, con que sea claro alcanza.
                             ¡Gracias por ser parte y sumar tu voz al viaje!</p>
@@ -42,10 +42,21 @@
                         <p>Tu opinión nos importa (¡aunque no lo creas!) Contanos, ¿qué está pasando?</p>
                     </div>
                     <div class="form-abajo">
-                        <input type="text" name="Nombre y apellido" id="Nombre y apellido" maxlength="30" placeholder="Nombre y apellido" required>
-                        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
-                        <input type="email" name="Correo electronico" id="Correo electronico" placeholder="Correo electrónico" required>
-                        <textarea name="Comentario" id="Comentario" placeholder="Comentario"></textarea>
+                        <div class="casillas">
+                            <input type="text" name="nombre y apellido" id="nombre y apellido" maxlength="30" placeholder="Nombre y apellido" required>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                            <input type="email" name="correo electronico" id="correo electronico" placeholder="Correo electrónico" required>
+                            <select id="mi-selector" name="mi-selector">
+                                <option value="opcion">Seleccione una estación</option>
+                                <option value="opcion1">Lomas de Zamora</option>
+                                <option value="opcion2">Temperley</option>
+                            </select>
+                            <textarea name="Comentario" id="comentario" placeholder="Comentario"></textarea>
+                        </div>
+                        <div class="botones-form">
+                        <label><input type="checkbox" name="noticias" value="Quiero recibir noticias de último momento" id="recibir">Quiero recibir noticias de último momento</label>
+                        <input class="boton-enviar" type="submit" value="Enviar">
+                        </div>      
                     </div>
                 </article>
                 <img src="img/vectores/pixeles-contacto-2.svg"/>
