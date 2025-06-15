@@ -276,14 +276,16 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 120px 10%;
-    background-color: #f4f4f4;
+    padding: 100px 10%;
+    background-color: #F0F0F0;
     flex-wrap: wrap;
+    gap: 300px;
 }
 
 .texto-donar {
     flex: 1;
     max-width: 84vh;
+    margin 
 }
 
 .texto-donar h3 {
@@ -305,16 +307,17 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 250px;
+    margin-top: 300px;
 }
 
 .btn-donar {
     background-color: #008EDB;
     color: white;
     text-decoration: none;
-    padding: 10px 80px;
+    padding: 10px 100px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    font-size: 25px;
     border: none;
 }
 
