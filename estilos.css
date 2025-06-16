@@ -41,12 +41,12 @@ h2{
 }
 
 h3{
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 h4{
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.72px;
 }
@@ -237,7 +237,7 @@ footer{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    dlockisplay: b; 
+    display: block;  
 }
 
 .texto-superpuesto{
@@ -635,14 +635,32 @@ textarea{
 
 /* HORARIOS */
 
-.alerta{
+
+/* se generaba scrol horizontal y tambien la section alerta quedaba por debajo del header por tener position fixed,
+encontre esta manera de solucionarlo */
+
+.main-horarios {
+    max-width: 100%;
+    overflow-x: hidden;  
+    padding-top: 100px;     
+}
+
+
+/* SECTION ALERTA */
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+.alerta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
     background-color: #008EDB;
 }
-
 
 .sirena {
     display: flex;
@@ -651,12 +669,6 @@ textarea{
     width: 100%;
 }
 
-
-
-.slider {
-    overflow: hidden;
-    width: 100vw;
-}
 
 .slider-track {
     display: flex;
@@ -675,12 +687,10 @@ textarea{
 
 .alerta-texto {
     font-size: 20px;
+    font-weight: 200;
     color: white;
 }
 
-.caja {
-    background-color: #FFED00;
-}
 
 /* Animación */
 @keyframes scroll {
@@ -692,7 +702,6 @@ textarea{
     }
 }
 
-
 .boton-info {
     background-color: #FFED00;
     padding: 10px 70px;
@@ -700,6 +709,10 @@ textarea{
 
 .boton-info p {
     font-size: 20px;
+}
+
+div a {
+    padding: 5px;
 }
 
 .boton-info:hover{
@@ -710,3 +723,90 @@ textarea{
 .separador {
     background-color: #F0F0F0;
 }
+
+
+/* SECTION HORARIOS */
+
+.titulo-horarios {
+    display: flex;
+    align-items: end;
+}
+
+.titulo-horarios div {
+    display: flex;
+    align-items: center;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 10px 5px;
+}
+
+.titulo {
+    background-color: #008EDB;
+    color: #F0F0F0;
+    padding: 1px 50px 0px 50px;
+    letter-spacing: 2px;
+}
+
+
+.input1, .input2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #008EDB;
+    color: #F0F0F0;
+    padding: 8px 16px;
+    width: 230px;
+    margin: 5px;
+}
+
+.espacio, .espacio2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.boton-buscar {
+    background-color: #FFED00;         
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 80px;
+    display: block;
+    margin: 0 auto;   
+    border: none;
+}
+
+.boton-buscar:hover {
+    background-color: black;
+    color: #F0F0F0;
+}
+
+
+.inputs-horarios {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.gap-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* IMG MAPA */
+/* la imagen tambien me generaba scroll horizontal, lo solucione de esta manera */
+.mapa-img {
+    width: 100%;
+    max-width: 1724px;
+    height: auto;
+}
+
+
+
+
