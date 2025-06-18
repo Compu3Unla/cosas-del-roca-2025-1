@@ -41,12 +41,12 @@ h2{
 }
 
 h3{
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 h4{
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.72px;
 }
@@ -65,7 +65,6 @@ header{
     display: flex;
     flex-direction: column;
     position: fixed;
-    z-index: 10000;
 }
 
 header div{
@@ -236,8 +235,7 @@ footer{
 
 .portada img {
     object-fit: cover;
-    display: block; 
-
+    display: block;  
 }
 
 .texto-superpuesto{
@@ -280,6 +278,7 @@ footer{
 .texto-donar {
     flex: 1;
     max-width: 84vh;
+    margin: 150px 200px;
 }
 
 .texto-donar h3 {
@@ -780,223 +779,68 @@ textarea{
 
 
 
-/*index*/
 
-.separador-ind{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HORARIOS */
+
+
+/* se generaba scrol horizontal y tambien la section alerta quedaba por debajo del header por tener position fixed,
+encontre esta manera de solucionarlo */
+
+.main-horarios {
+    max-width: 100%;
+    overflow-x: hidden;  
+    padding-top: 100px;     
 }
 
-.estado-servicios{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 60px;
-}
 
-.titulo-box-azul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
+/* SECTION ALERTA */
 
-.box-azul{
-    color: #F0F0F0;
-    background-color: #008EDB;
-    padding: 10px 26px;
-}
-
-.tabla-estados{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 50px;
-}
-
-.estado-ramales{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 45px;
-}
-
-.r-electricos-titulo{
-    color: #F0F0F0;
-    background-color: #008EDB;
-    border-radius: 50px 0px 0px 0px;
-    padding: 15px 97px;
-}
-
-.r-diesel-titulo{
-    color: #F0F0F0;
-    background-color: #008EDB;
-    padding: 15px 130px;
-}
-
-.r-larga-titulo{
-    color: #F0F0F0;
-    background-color: #008EDB;
-    border-radius: 0px 50px 0px 0px;
-    padding: 15px 61px;
-}
-
-.ramales{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 40px;
-}
-
-.lista-ramales{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 30px;
-}
-
-.lista-ramales li{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    gap: 40px;
-}
-
-.p-ramales{
-    color: #1D1D1B;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.referencia{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 45px;
-}
-
-.referencia li{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 25px;
-}
-
-/*-----------------------------TIENDA-------------------------------*/
-.portada {
-    width: 100vw;
-    height: auto;
+.slider {
     overflow: hidden;
-}
-
-.portada img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block; 
+    max-width: 100%;
 }
 
-.texto-superpuesto{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #F0F0F0;
-    transform: translate(-50%, -50%);
-}
-
-.flecha {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: salto 1.5s infinite ease-in-out;
-}
-
-@keyframes salto {
-  0%, 100% {
-    transform: translateX(-50%) translateY(0);
-  }
-  50% {
-    transform: translateX(-50%) translateY(20px);
-  }
-}
-
-.separador img {
-    width: 100%;
-    height: 100%;
-}
-
-.donar {
-    display: flex;
-    margin: 150px 200px;
-}
-
-.texto-donar h3 {
-    color: #008EDB;
-}
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------------HORARIOS-----------------------------*/
-
-.alerta{
+.alerta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
     background-color: #008EDB;
 }
-
 
 .sirena {
     display: flex;
@@ -1005,12 +849,6 @@ textarea{
     width: 100%;
 }
 
-
-
-.slider {
-    overflow: hidden;
-    width: 100vw;
-}
 
 .slider-track {
     display: flex;
@@ -1029,12 +867,10 @@ textarea{
 
 .alerta-texto {
     font-size: 20px;
+    font-weight: 200;
     color: white;
 }
 
-.caja {
-    background-color: #FFED00;
-}
 
 /* Animación */
 @keyframes scroll {
@@ -1046,7 +882,6 @@ textarea{
     }
 }
 
-
 .boton-info {
     background-color: #FFED00;
     padding: 10px 70px;
@@ -1056,587 +891,102 @@ textarea{
     font-size: 20px;
 }
 
+div a {
+    padding: 5px;
+}
+
 .boton-info:hover{
     background-color: black;
     color: #F0F0F0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FIN CONTACTO */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* mas index */
-
-#main-index {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-}
-
-.cdr-titulo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-/* section - comentarios */
-
-.t-blanco{
-    color: #F0F0F0;
-}
-
-.t-azul{
-    color: #008EDB;
-}
-
-.comentarios-ind{
-    background-color: #008EDB;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    padding: 100px 0px;
-}
-
-.titulo-comentarios{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-
-.box-blanca{
-    padding: 10px 120px;
-    background-color: #F0F0F0;
-    color: #008EDB;
-}
-
-.tweets{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 45px;
-    width: 90%;
-}
-
-/* section - multimedia */
-
-.multimedia-ind{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding-top: 35px;
-}
-
-.titulo-multim{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.dos-columnas{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 254px;
-}
-
-.tema-oficial, .slider-memes-ind{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-}
-
-.carrusel-memes {
-  position: relative;
-  width: 415px;
-  height: 415px;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.slides-meme {
-  display: flex;
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide-meme {
-  width: 100%;
-  flex-shrink: 0;
-}
-
-.slide-meme img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-input[name="radio-btn"] {
-  display: none;
-}
-
-
-.nav-dots {
-  text-align: center;
-  position: absolute;
-  bottom: 2px;
-  width: 100%;
-}
-
-.nav-dots label {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 10px;
-  background-color: #008EDB;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s;
-}
-
-input#radio1:checked ~ .slides-meme {
-  transform: translateX(0%);
-}
-
-input#radio2:checked ~ .slides-meme {
-  transform: translateX(-100%);
-}
-
-input#radio3:checked ~ .slides-meme {
-  transform: translateX(-200%);
-}
-
-input#radio1:checked ~ .nav-dots label[for="radio1"],
-input#radio2:checked ~ .nav-dots label[for="radio2"],
-input#radio3:checked ~ .nav-dots label[for="radio3"] {
-  background-color: #FFED00;
-}
-
-.boton-vermas-ind{
-    border: none;
-    padding: 7px 50px;
-    color: #008EDB;
-}
-
-.boton-vermas-ind:hover{
-    color: #1D1D1B;
-    background-color: #FFED00;
-}
-
-.reclamos-ind{
-    width: 100%;
-    padding: 50px 0px 100px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-}
-
-.reclamos-ind h4{
-    width: 38%;
-}
-
-.boton-reclamo{
-    border: none;
-    color: #F0F0F0;
-    background-color: #008EDB;
-    padding: 12px 90px;
-}
-
-.boton-reclamo:hover{
-    color: #1D1D1B;
-    background-color: #FFED00;
-}
-
 .separador {
     background-color: #F0F0F0;
 }
+
+
+/* SECTION HORARIOS */
+
+.titulo-horarios {
+    display: flex;
+    align-items: end;
+}
+
+.titulo-horarios div {
+    display: flex;
+    align-items: center;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 10px 5px;
+}
+
+.titulo {
+    background-color: #008EDB;
+    color: #F0F0F0;
+    padding: 1px 50px 0px 50px;
+    letter-spacing: 2px;
+}
+
+
+.input1, .input2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #008EDB;
+    color: #F0F0F0;
+    padding: 8px 16px;
+    width: 230px;
+    margin: 5px;
+}
+
+.espacio, .espacio2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.boton-buscar {
+    background-color: #FFED00;         
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 80px;
+    display: block;
+    margin: 0 auto;   
+    border: none;
+}
+
+.boton-buscar:hover {
+    background-color: black;
+    color: #F0F0F0;
+}
+
+
+.inputs-horarios {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.gap-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* IMG MAPA */
+/* la imagen tambien me generaba scroll horizontal, lo solucione de esta manera */
+.mapa-img {
+    width: 100%;
+    max-width: 1724px;
+    height: auto;
+}
+
+
+
 
