@@ -268,7 +268,6 @@ footer{
 /*-----Seccion donar-----*/
 .donar {
     display: flex;
-
     justify-content: space-between;
     align-items: center;
     background-color: #F0F0F0;
@@ -462,7 +461,7 @@ footer{
 
 
 
-/*---------------------------CONTACTO----------------------------- */
+/*---------------------------CONTACTO-----------------------------*/
 .contacto{
     display: flex;
     justify-content: space-between;
