@@ -521,13 +521,26 @@ logré que al tipear se ponga en blanco... también me gustaría saber si en Sel
     border: #F0F0F0 2px solid;
 }
 
+.casillas-form{
+    background-color: #008EDB;
+    border: 0px;
+    border-bottom:#F0F0F0 2px solid;
+    padding-top: 20px;
+    
+}
+
+#nombreyapellido{
+    color: #F0F0F0;
+}
+
+/*
 input{
     background-color: #008EDB;
     border: 0px;
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
     color: #F0F0F0;
-}
+}*/
 
 select{
     background-color: #008EDB;
