@@ -228,14 +228,12 @@ footer{
 
 /*-----------------------------TIENDA-------------------------------*/
 .portada {
-    height: 100vh; 
-    width: 100vw;
+    height: 100%; 
+    width: 100%;
     overflow: hidden;
 }
 
 .portada img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     display: block;  
 }
@@ -265,20 +263,203 @@ footer{
   }
 }
 
-.separador img {
-    width: 100%;
-    height: 100%;
-}
 
+
+/*-----Seccion donar-----*/
 .donar {
     display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F0F0;
+    flex-wrap: wrap;
+    gap: 300px;
+}
+
+.texto-donar {
+    flex: 1;
+    max-width: 84vh;
     margin: 150px 200px;
 }
 
 .texto-donar h3 {
     color: #008EDB;
+    font-weight: 600;
+    font-size: 1.6em;
+    margin-bottom: 20px;
 }
- 
+
+.texto-donar p {
+    color: #1D1D1B;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.boton-donar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.btn-donar {
+    background-color: #008EDB;
+    color: white;
+    text-decoration: none;
+    padding: 10px 100px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 35px;
+    border: none;
+}
+
+.btn-donar:hover {
+    background-color: #FFED00;
+    color: #1D1D1B;
+}
+
+
+/*-----Seccion remeras------*/
+.tienda {
+    text-align: center;
+    padding: 60px 0 10px;
+    background-color: #008EDB;
+}
+
+.tienda img{
+    width: 100%;
+}
+
+.tienda h2 {
+    font-size: 1.8em;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: #F0F0F0;
+}
+
+.tienda p {
+    font-size: 20px;
+    font-weight: lighter;
+    max-width: 900px;
+    margin: 0 auto 100px auto;
+    color: #F0F0F0;
+}
+
+.grid-remeras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.producto {
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.producto img {
+    width: 80%;
+    margin: 30px 20px 0 20px;
+}
+
+.info {
+    padding: 15px;
+    margin-left: 25px;
+}
+
+.info .titulo {
+    color: #008EDB;
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.info p {
+    margin-bottom: 0;
+    color: #008EDB;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.info button {
+    background-color: #008EDB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.info button:hover {
+    background-color: #FFED00;
+    color: #1D1D1B;
+}
+
+.fila-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.fila-info p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.fila-info button {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    background-color: #008EDB; 
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.bloques {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.boton {
+    background-color: #f1f1f1;
+    color: #0078c8;
+    border: none;
+    padding: 10px 70px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ .boton:hover {
+    background-color: #FFED00;
+    color: #1D1D1B;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*---------------------------CONTACTO----------------------------- */
