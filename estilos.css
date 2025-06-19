@@ -442,6 +442,61 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------------CONTACTO-----------------------------*/
 .contacto{
     display: flex;
@@ -452,7 +507,7 @@ footer{
     margin-bottom: 150px;
     gap: 40px;
 }
-/*columna derecha*/
+/*-----columna derecha-----*/
 .izquierda{
     display: flex;
     flex-direction: column;
@@ -476,7 +531,7 @@ footer{
     gap: 30px;
     max-width: 834px;
 }
-/*columna derecha   FORMULARIO*/
+/*-----columna derecha formulario-----*/
 .derecha{
     display: flex;
     align-items: flex-start;
@@ -517,6 +572,7 @@ footer{
 .botones-form{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 
@@ -527,7 +583,7 @@ footer{
 }
 .boton-enviar:hover{
     background-color: #FFED00;
-    border: none;
+    border:#008EDB 2px solid;
     color: #1D1D1B;
 }
 
@@ -553,6 +609,8 @@ input{
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
     color: #F0F0F0;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 16px;
 }
 
 input::placeholder {
@@ -570,12 +628,24 @@ select{
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
     color: #006da7;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 16px;
 }
 textarea{
     background-color: #008EDB;
     border: 0px;
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 16px;
+}
+
+.check-texto{
+    display: flex;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 15px;
+    align-items: center;
+    gap: 5px;
 }
 
 
@@ -607,13 +677,57 @@ textarea{
     grid-gap: 20px;
 }
 
+.grid-container img:hover{
+    width: 205px;
+    height: 206px;
+}
+
 .boton-ver-mas{
     background-color: #FFED00;
     padding: 10px;
     margin-bottom: 40px;
 }
 
+/*-----galeria de prueba-----*/
 
+.galeria-popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.popup-completo{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(23, 22, 20, 0.70);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+    padding: 100px 0px;
+}
+
+.popup-completo:target{
+    display: flex;
+}
+
+.popup-der{
+    color: #F5F2ED;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 231px;
+}
+
+.cruz-popup{
+    background-image: url('img/vectores/cruz-galeria-popup.svg');
+    width: 41px;
+    height: 41px;
+    background-size: cover;
+    background-position: center;
+}
 
 
 
