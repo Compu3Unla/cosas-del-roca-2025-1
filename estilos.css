@@ -7,10 +7,6 @@
 /*-----------------------------GENERAL-------------------------------*/
 
 * {
-    font-family: "Funnel Display", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 18px;
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -26,6 +22,10 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: #F0F0F0;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
 }
 
 /*-----------------------------WEB-------------------------------*/
@@ -68,7 +68,7 @@ header{
     z-index: 10000;
 }
 
-header div{
+header nav{
     padding: 13px 200px 13px 200px;
     display: flex;
     justify-content: space-between;
@@ -91,6 +91,15 @@ header div{
 
 .boton-nav :hover{
     color: #FFED00;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icono {
+    display: none;
+    cursor: pointer;
 }
 
 /*-----------------------------FOOTER-------------------------------*/
@@ -124,13 +133,8 @@ footer{
 }
 
 
-/*index*/
+/*-----------------------------INDEX-------------------------------*/
 
-.separador-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .estado-servicios{
     display: flex;
@@ -229,9 +233,6 @@ footer{
 
 /*-----------------------------TIENDA-------------------------------*/
 .portada {
-    height: auto; 
-    width: 100vw;
-    position: relative;
     height: 100vh; 
     width: 100vw;
     overflow: hidden;
@@ -241,7 +242,7 @@ footer{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block; 
+    
 }
 
 .texto-superpuesto{
@@ -269,11 +270,6 @@ footer{
   }
 }
 
-
-.separador img{
-    width: 100%;
-    height: auto;
-
 .separador img {
     width: 100%;
     height: 100%;
@@ -286,18 +282,11 @@ footer{
     padding: 120px 10%;
     background-color: #f4f4f4;
     flex-wrap: wrap;
-
-    margin: 150px 300px;
-
 }
 
 .texto-donar {
     flex: 1;
-
-    max-width: 50vw;
-
     max-width: 84vh;
-
 }
 
 .texto-donar h3 {
@@ -330,7 +319,6 @@ footer{
     font-weight: bold;
     transition: background-color 0.3s ease;
     border: none;
-    cursor: pointer;
 }
 
 .btn-donar:hover {
@@ -371,11 +359,14 @@ footer{
     gap: 40px;
     margin-bottom: 60px;
     max-width: 1300px;
-    margin: 0 auto 60px auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .producto {
     background-color: white;
+    overflow: hidden;
+    padding-bottom: 10px;
 }
 
 .producto img {
@@ -384,7 +375,8 @@ footer{
 }
 
 .info {
-    margin: 10px 42px 20px;
+    padding: 15px;
+    margin-left: 25px;
 }
 
 .info .titulo {
@@ -397,7 +389,7 @@ footer{
     margin-bottom: 0;
     color: #008EDB;
     font-weight: lighter;
-    text-align: left;
+    text-align: justify;
 }
 
 .info button {
@@ -435,20 +427,58 @@ footer{
 
 
 
-.boton {
-    background-color: #f1f1f1;
-    color: #0078c8;
-    border: none;
-    padding: 10px 70px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-.boton:hover {
-    background-color: #FFED00;
-    color: #1D1D1B;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -473,11 +503,11 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
-    margin-top: 100px;
-    margin-bottom: 52px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     gap: 40px;
 }
-/*columna derecha*/
+/*-----columna derecha-----*/
 .izquierda{
     display: flex;
     flex-direction: column;
@@ -501,7 +531,7 @@ footer{
     gap: 30px;
     max-width: 834px;
 }
-/*columna derecha   FORMULARIO*/
+/*-----columna derecha formulario-----*/
 .derecha{
     display: flex;
     align-items: flex-start;
@@ -522,8 +552,6 @@ footer{
     color: #F0F0F0;
 }
 
-/* no sé cómo cambiar el color de Nombre y Apellido, Teléfono etc del form, intenté dandole clases etc pero no hay caso(al final de esto está el id con los que intenté)
-logré que al tipear se ponga en blanco... también me gustaría saber si en Seleccione una estación se puede cambiar el color de las opciones.*/
 
 .form-abajo{
     background-color: #008EDB;
@@ -544,10 +572,35 @@ logré que al tipear se ponga en blanco... también me gustaría saber si en Sel
 .botones-form{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
+
+
 .boton-enviar{
     background-color: #008EDB;
     border: #F0F0F0 2px solid;
+    padding: 10px 20px;
+}
+.boton-enviar:hover{
+    background-color: #FFED00;
+    border:#008EDB 2px solid;
+    color: #1D1D1B;
+}
+
+.casillas-form{
+    background-color: #008EDB;
+    border: 0px;
+    border-bottom:#F0F0F0 2px solid;
+    padding-top: 20px;
+    
+}
+
+.casillas-form{
+    background-color: #008EDB;
+    border: 0px;
+    border-bottom:#F0F0F0 2px solid;
+    padding-top: 20px;
+    
 }
 
 input{
@@ -556,6 +609,17 @@ input{
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
     color: #F0F0F0;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 16px;
+}
+
+input::placeholder {
+
+    color: #006da7;
+}
+
+textarea::placeholder {
+    color: #006da7;
 }
 
 select{
@@ -563,39 +627,68 @@ select{
     border: 0px;
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
+    color: #006da7;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 16px;
 }
 textarea{
     background-color: #008EDB;
     border: 0px;
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 16px;
 }
 
-#comentario{
-    color: #F0F0F0;
+.check-texto{
+    display: flex;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 15px;
+    align-items: center;
+    gap: 5px;
 }
 
-#telefono{
-    color: #F0F0F0;
-}
+
 
 
 /*--------------------------MEMES----------------------*/
 
+
+.memes-principal{
+    display: flex;
+    align-items: center;
+}
+
+.galeria h2{
+    padding-top: 27px;
+    color: #008EDB;
+}
 .galeria{
     padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .grid-container{
-    width: 50%;
     justify-content: center;
-    margin: 30px auto;
     padding: 30px;
     display: grid;
-    grid-template-columns: 212px 212px 212px 212px;
+    grid-template-columns: 200px 200px 200px 200px;
     grid-gap: 20px;
 }
 
+.grid-container img:hover{
+    width: 205px;
+    height: 206px;
+}
 
+.boton-ver-mas{
+    background-color: #FFED00;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+/*-----galeria de prueba-----*/
 
 .galeria-roca-popup{
     display: none;
@@ -814,13 +907,14 @@ textarea{
 
 
 
-/*index*/
+/*-----------------------------INDEX-------------------------------*/
 
 .separador-ind{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 95vw;
+    height: auto;
 }
 
 .estado-servicios{
@@ -918,7 +1012,58 @@ textarea{
     gap: 25px;
 }
 
+/*-----------------------------TIENDA-------------------------------*/
+.portada {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
 
+.portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+.texto-superpuesto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #F0F0F0;
+    transform: translate(-50%, -50%);
+}
+
+.flecha {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: salto 1.5s infinite ease-in-out;
+}
+
+@keyframes salto {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(20px);
+  }
+}
+
+.separador img {
+    width: 100%;
+    height: 100%;
+}
+
+.donar {
+    display: flex;
+    margin: 150px 200px;
+}
+
+.texto-donar h3 {
+    color: #008EDB;
+}
  
 
 
@@ -972,16 +1117,13 @@ textarea{
 
 /*---------------------------HORARIOS-----------------------------*/
 
-
-
 .main-horarios {
     max-width: 100%;
     overflow-x: hidden;  
     padding-top: 100px;     
 }
 
-
-/*----- SECTION ALERTA----- */
+/*-----section alerta----- */
 
 .slider {
     overflow: hidden;
@@ -1041,17 +1183,17 @@ textarea{
     padding: 10px 70px;
 }
 
-
 .boton-info:hover{
     background-color: black;
     color: #F0F0F0;
 }
 
-
 .separador {
     background-color: #F0F0F0;
 }
 
+
+/*-----section horarios----- */
 
 .titulo-horarios {
     display: flex;
@@ -1077,11 +1219,9 @@ textarea{
     color: #F0F0F0;
     padding: 1px 50px 0px 50px;
     letter-spacing: 2px;
-    font-size: 22px;
 }
 
-
-.input {
+.input1, .input2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1092,11 +1232,7 @@ textarea{
     margin: 5px;
 }
 
-.input p {
-    font-size: 16px;
-}
-
-.espacio {
+.espacio, .espacio2 {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -1117,7 +1253,6 @@ textarea{
     color: #F0F0F0;
 }
 
-
 .inputs-horarios {
     display: flex;
     align-items: center;
@@ -1130,7 +1265,8 @@ textarea{
     gap: 30px;
 }
 
-/* IMG MAPA */
+/*-----img mapa-----*/
+
 .mapa-img {
     width: 100%;
     max-width: 1724px;
@@ -1176,7 +1312,6 @@ textarea{
 
 
 
-/* FIN CONTACTO */
 
 
 
@@ -1523,7 +1658,8 @@ textarea{
 
 
 
-/* mas index */
+
+/*-----------------------------MÁS INDEX-------------------------------*/
 
 #main-index {
     display: flex;
@@ -1538,7 +1674,17 @@ textarea{
     justify-content: center;
 }
 
-/* section - comentarios */
+.subt-superpuesto{
+    color: #F0F0F0;
+    width: 25%;
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*-----Seccion comentarios-----*/
 
 .t-blanco{
     color: #F0F0F0;
@@ -1576,23 +1722,30 @@ textarea{
     justify-content: center;
     align-items: flex-start;
     gap: 45px;
-    width: 90%;
+    width: 95%;
 }
 
-/* section - multimedia */
+.tweets-mobile{
+    display: none;
+}
+
+/*-----Seccion multimedia-----*/
 
 .multimedia-ind{
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 100px;
     padding-top: 35px;
 }
 
 .titulo-multim{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 180px;
+
 }
 
 .dos-columnas{
@@ -1680,12 +1833,17 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
     border: none;
     padding: 7px 50px;
     color: #008EDB;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .boton-vermas-ind:hover{
     color: #1D1D1B;
     background-color: #FFED00;
 }
+
+/*-----Seccion reclamos-----*/
 
 .reclamos-ind{
     width: 100%;
@@ -1705,6 +1863,9 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
     color: #F0F0F0;
     background-color: #008EDB;
     padding: 12px 90px;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
 }
 
 .boton-reclamo:hover{
@@ -1906,3 +2067,4 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
         gap: 50px;
     }
 }
+
