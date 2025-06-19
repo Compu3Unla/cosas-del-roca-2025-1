@@ -7,6 +7,10 @@
 /*-----------------------------GENERAL-------------------------------*/
 
 * {
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -22,10 +26,6 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: #F0F0F0;
-    font-family: "Funnel Display", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 18px;
 }
 
 /*-----------------------------WEB-------------------------------*/
@@ -68,7 +68,7 @@ header{
     z-index: 10000;
 }
 
-header nav{
+header div{
     padding: 13px 200px 13px 200px;
     display: flex;
     justify-content: space-between;
@@ -91,15 +91,6 @@ header nav{
 
 .boton-nav :hover{
     color: #FFED00;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-.menu-icono {
-    display: none;
-    cursor: pointer;
 }
 
 /*-----------------------------FOOTER-------------------------------*/
@@ -135,6 +126,11 @@ footer{
 
 /*index*/
 
+.separador-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .estado-servicios{
     display: flex;
@@ -442,72 +438,17 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------------------------CONTACTO-----------------------------*/
 .contacto{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 52px;
     gap: 40px;
 }
-/*-----columna derecha-----*/
+/*columna derecha*/
 .izquierda{
     display: flex;
     flex-direction: column;
@@ -531,7 +472,7 @@ footer{
     gap: 30px;
     max-width: 834px;
 }
-/*-----columna derecha formulario-----*/
+/*columna derecha   FORMULARIO*/
 .derecha{
     display: flex;
     align-items: flex-start;
@@ -552,6 +493,8 @@ footer{
     color: #F0F0F0;
 }
 
+/* no sé cómo cambiar el color de Nombre y Apellido, Teléfono etc del form, intenté dandole clases etc pero no hay caso(al final de esto está el id con los que intenté)
+logré que al tipear se ponga en blanco... también me gustaría saber si en Seleccione una estación se puede cambiar el color de las opciones.*/
 
 .form-abajo{
     background-color: #008EDB;
@@ -572,35 +515,10 @@ footer{
 .botones-form{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
-
-
 .boton-enviar{
     background-color: #008EDB;
     border: #F0F0F0 2px solid;
-    padding: 10px 20px;
-}
-.boton-enviar:hover{
-    background-color: #FFED00;
-    border:#008EDB 2px solid;
-    color: #1D1D1B;
-}
-
-.casillas-form{
-    background-color: #008EDB;
-    border: 0px;
-    border-bottom:#F0F0F0 2px solid;
-    padding-top: 20px;
-    
-}
-
-.casillas-form{
-    background-color: #008EDB;
-    border: 0px;
-    border-bottom:#F0F0F0 2px solid;
-    padding-top: 20px;
-    
 }
 
 input{
@@ -609,17 +527,6 @@ input{
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
     color: #F0F0F0;
-    font-family: "Funnel Display", sans-serif;
-    font-size: 16px;
-}
-
-input::placeholder {
-
-    color: #006da7;
-}
-
-textarea::placeholder {
-    color: #006da7;
 }
 
 select{
@@ -627,68 +534,39 @@ select{
     border: 0px;
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
-    color: #006da7;
-    font-family: "Funnel Display", sans-serif;
-    font-size: 16px;
 }
 textarea{
     background-color: #008EDB;
     border: 0px;
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
-    font-family: "Funnel Display", sans-serif;
-    font-size: 16px;
 }
 
-.check-texto{
-    display: flex;
-    font-family: "Funnel Display", sans-serif;
-    font-size: 15px;
-    align-items: center;
-    gap: 5px;
+#comentario{
+    color: #F0F0F0;
 }
 
-
+#telefono{
+    color: #F0F0F0;
+}
 
 
 /*--------------------------MEMES----------------------*/
 
-
-.memes-principal{
-    display: flex;
-    align-items: center;
-}
-
-.galeria h2{
-    padding-top: 27px;
-    color: #008EDB;
-}
 .galeria{
     padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .grid-container{
+    width: 50%;
     justify-content: center;
+    margin: 30px auto;
     padding: 30px;
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 212px 212px 212px 212px;
     grid-gap: 20px;
 }
 
-.grid-container img:hover{
-    width: 205px;
-    height: 206px;
-}
 
-.boton-ver-mas{
-    background-color: #FFED00;
-    padding: 10px;
-    margin-bottom: 40px;
-}
-
-/*-----galeria de prueba-----*/
 
 .galeria-roca-popup{
     display: none;
@@ -907,14 +785,13 @@ textarea{
 
 
 
-/*-----------------------------INDEX-------------------------------*/
+/*index*/
 
 .separador-ind{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95vw;
-    height: auto;
+    width: 95%;
 }
 
 .estado-servicios{
@@ -1117,13 +994,16 @@ textarea{
 
 /*---------------------------HORARIOS-----------------------------*/
 
+
+
 .main-horarios {
     max-width: 100%;
     overflow-x: hidden;  
     padding-top: 100px;     
 }
 
-/*-----section alerta----- */
+
+/*----- SECTION ALERTA----- */
 
 .slider {
     overflow: hidden;
@@ -1183,17 +1063,17 @@ textarea{
     padding: 10px 70px;
 }
 
+
 .boton-info:hover{
     background-color: black;
     color: #F0F0F0;
 }
 
+
 .separador {
     background-color: #F0F0F0;
 }
 
-
-/*-----section horarios----- */
 
 .titulo-horarios {
     display: flex;
@@ -1219,9 +1099,11 @@ textarea{
     color: #F0F0F0;
     padding: 1px 50px 0px 50px;
     letter-spacing: 2px;
+    font-size: 22px;
 }
 
-.input1, .input2 {
+
+.input {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1232,7 +1114,11 @@ textarea{
     margin: 5px;
 }
 
-.espacio, .espacio2 {
+.input p {
+    font-size: 16px;
+}
+
+.espacio {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -1253,6 +1139,7 @@ textarea{
     color: #F0F0F0;
 }
 
+
 .inputs-horarios {
     display: flex;
     align-items: center;
@@ -1265,8 +1152,7 @@ textarea{
     gap: 30px;
 }
 
-/*-----img mapa-----*/
-
+/* IMG MAPA */
 .mapa-img {
     width: 100%;
     max-width: 1724px;
@@ -1312,6 +1198,7 @@ textarea{
 
 
 
+/* FIN CONTACTO */
 
 
 
@@ -1658,8 +1545,7 @@ textarea{
 
 
 
-
-/*-----------------------------MÁS INDEX-------------------------------*/
+/* mas index */
 
 #main-index {
     display: flex;
@@ -1674,17 +1560,7 @@ textarea{
     justify-content: center;
 }
 
-.subt-superpuesto{
-    color: #F0F0F0;
-    width: 25%;
-    text-align: center;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/*-----Seccion comentarios-----*/
+/* section - comentarios */
 
 .t-blanco{
     color: #F0F0F0;
@@ -1722,30 +1598,23 @@ textarea{
     justify-content: center;
     align-items: flex-start;
     gap: 45px;
-    width: 95%;
+    width: 90%;
 }
 
-.tweets-mobile{
-    display: none;
-}
-
-/*-----Seccion multimedia-----*/
+/* section - multimedia */
 
 .multimedia-ind{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 100px;
     padding-top: 35px;
 }
 
 .titulo-multim{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 180px;
-
 }
 
 .dos-columnas{
@@ -1833,17 +1702,12 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
     border: none;
     padding: 7px 50px;
     color: #008EDB;
-    font-family: "Funnel Display", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
 }
 
 .boton-vermas-ind:hover{
     color: #1D1D1B;
     background-color: #FFED00;
 }
-
-/*-----Seccion reclamos-----*/
 
 .reclamos-ind{
     width: 100%;
@@ -1863,9 +1727,6 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
     color: #F0F0F0;
     background-color: #008EDB;
     padding: 12px 90px;
-    font-family: "Funnel Display", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
 }
 
 .boton-reclamo:hover{
@@ -2067,4 +1928,3 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
         gap: 50px;
     }
 }
-
