@@ -41,12 +41,12 @@ h2{
 }
 
 h3{
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 600;
 }
 
 h4{
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: 0.72px;
 }
@@ -690,7 +690,7 @@ textarea{
 
 /*-----galeria de prueba-----*/
 
-.galeria-popup{
+.galeria-roca-popup{
     display: none;
     position: fixed;
     top: 0;
@@ -704,7 +704,7 @@ textarea{
     background: rgba(23, 22, 20, 0.70);
     display: none;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 85px;
     padding: 100px 0px;
 }
@@ -713,18 +713,10 @@ textarea{
     display: flex;
 }
 
-.popup-der{
-    color: #F5F2ED;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 231px;
-}
-
 .cruz-popup{
-    background-image: url('img/vectores/cruz-galeria-popup.svg');
-    width: 41px;
-    height: 41px;
+    background-image: url('img/vectores/icon-cruz.svg');
+    width: 45px;
+    height: 45px;
     background-size: cover;
     background-position: center;
 }
@@ -1891,7 +1883,7 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
 
 @media screen and (max-width: 600px){
     
-/*-----Estilos-----*/
+    /*-----Estilos-----*/
 
     h1{
     font-size: 60px;
@@ -1927,7 +1919,7 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
         font-size: 16px;
     }
 
-/*-----Header-----*/
+    /*-----Header-----*/
 
     #menu-toggle:checked + .menu-icono + .botonera-header {
         display: flex;
@@ -1978,7 +1970,7 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
         transition: background-image 0.4s ease;
     }
 
-/*-----Index-----*/
+    /*-----Index-----*/
 
     .texto-superpuesto{
     top: 150px;
