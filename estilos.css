@@ -229,12 +229,14 @@ footer{
 
 /*-----------------------------TIENDA-------------------------------*/
 .portada {
-    height: 100%; 
-    width: 100%;
+    height: 100vh; 
+    width: 100vw;
     overflow: hidden;
 }
 
 .portada img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     
 }
@@ -264,22 +266,23 @@ footer{
   }
 }
 
+.separador img {
+    width: 100%;
+    height: 100%;
+}
 
-
-/*-----Seccion donar-----*/
 .donar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F0F0F0;
+    padding: 120px 10%;
+    background-color: #f4f4f4;
     flex-wrap: wrap;
-    gap: 300px;
 }
 
 .texto-donar {
     flex: 1;
     max-width: 84vh;
-    margin: 150px 200px;
 }
 
 .texto-donar h3 {
@@ -301,17 +304,16 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 250px;
 }
 
 .btn-donar {
     background-color: #008EDB;
     color: white;
     text-decoration: none;
-    padding: 10px 100px;
+    padding: 10px 80px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    font-size: 35px;
     border: none;
 }
 
@@ -324,7 +326,7 @@ footer{
 /*-----Seccion remeras------*/
 .tienda {
     text-align: center;
-    padding: 60px 0 10px;
+    padding: 60px 20px;
     background-color: #008EDB;
 }
 
@@ -387,7 +389,7 @@ footer{
 }
 
 .info button {
-    background-color: #008EDB;
+    background-color: #0087d2;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -418,34 +420,8 @@ footer{
     font-weight: lighter;
 }
 
-.contenedor {
-    display: flex;
-    justify-content: center;
-    background-color: #008EDB; 
-    padding-bottom: 70px;
-    text-align: center;
-}
 
-.bloques {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
 
-.boton {
-    background-color: #f1f1f1;
-    color: #0078c8;
-    border: none;
-    padding: 10px 70px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
- .boton:hover {
-    background-color: #FFED00;
-    color: #1D1D1B;
- }
 
 
 
@@ -468,8 +444,8 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
-    margin-top: 100px;
-    margin-bottom: 52px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     gap: 40px;
 }
 /*columna derecha*/
@@ -517,8 +493,6 @@ footer{
     color: #F0F0F0;
 }
 
-/* no sé cómo cambiar el color de Nombre y Apellido, Teléfono etc del form, intenté dandole clases etc pero no hay caso(al final de esto está el id con los que intenté)
-logré que al tipear se ponga en blanco... también me gustaría saber si en Seleccione una estación se puede cambiar el color de las opciones.*/
 
 .form-abajo{
     background-color: #008EDB;
@@ -540,9 +514,25 @@ logré que al tipear se ponga en blanco... también me gustaría saber si en Sel
     display: flex;
     justify-content: space-between;
 }
+
+
 .boton-enviar{
     background-color: #008EDB;
     border: #F0F0F0 2px solid;
+    padding: 10px 20px;
+}
+.boton-enviar:hover{
+    background-color: #FFED00;
+    border: none;
+    color: #1D1D1B;
+}
+
+.casillas-form{
+    background-color: #008EDB;
+    border: 0px;
+    border-bottom:#F0F0F0 2px solid;
+    padding-top: 20px;
+    
 }
 
 .casillas-form{
@@ -1140,7 +1130,7 @@ div a {
 
 
 
-/* FIN CONTACTO */
+
 
 
 
