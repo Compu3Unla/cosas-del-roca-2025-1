@@ -7,10 +7,6 @@
 /*-----------------------------GENERAL-------------------------------*/
 
 * {
-    font-family: "Funnel Display", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 18px;
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -26,6 +22,10 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: #F0F0F0;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
 }
 
 /*-----------------------------WEB-------------------------------*/
@@ -68,7 +68,7 @@ header{
     z-index: 10000;
 }
 
-header div{
+header nav{
     padding: 13px 200px 13px 200px;
     display: flex;
     justify-content: space-between;
@@ -91,6 +91,15 @@ header div{
 
 .boton-nav :hover{
     color: #FFED00;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icono {
+    display: none;
+    cursor: pointer;
 }
 
 /*-----------------------------FOOTER-------------------------------*/
@@ -126,11 +135,6 @@ footer{
 
 /*index*/
 
-.separador-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .estado-servicios{
     display: flex;
@@ -600,13 +604,14 @@ textarea{
 
 
 
-/*index*/
+/*-----------------------------INDEX-------------------------------*/
 
 .separador-ind{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 95vw;
+    height: auto;
 }
 
 .estado-servicios{
@@ -1267,7 +1272,7 @@ textarea{
 
 
 
-/* mas index */
+/*-----------------------------MÁS INDEX-------------------------------*/
 
 #main-index {
     display: flex;
@@ -1282,7 +1287,17 @@ textarea{
     justify-content: center;
 }
 
-/* section - comentarios */
+.subt-superpuesto{
+    color: #F0F0F0;
+    width: 25%;
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*-----Seccion comentarios-----*/
 
 .t-blanco{
     color: #F0F0F0;
@@ -1320,23 +1335,30 @@ textarea{
     justify-content: center;
     align-items: flex-start;
     gap: 45px;
-    width: 90%;
+    width: 95%;
 }
 
-/* section - multimedia */
+.tweets-mobile{
+    display: none;
+}
+
+/*-----Seccion multimedia-----*/
 
 .multimedia-ind{
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 100px;
     padding-top: 35px;
 }
 
 .titulo-multim{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 180px;
+
 }
 
 .dos-columnas{
@@ -1424,12 +1446,17 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
     border: none;
     padding: 7px 50px;
     color: #008EDB;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .boton-vermas-ind:hover{
     color: #1D1D1B;
     background-color: #FFED00;
 }
+
+/*-----Seccion reclamos-----*/
 
 .reclamos-ind{
     width: 100%;
@@ -1449,6 +1476,9 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
     color: #F0F0F0;
     background-color: #008EDB;
     padding: 12px 90px;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
 }
 
 .boton-reclamo:hover{
@@ -1460,3 +1490,193 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
     background-color: #F0F0F0;
 }
 
+
+/*-----------------------------RESPONSIVE-------------------------------*/
+
+@media screen and (max-width: 600px){
+    
+/*-----Estilos-----*/
+
+    h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+    h2{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    h3{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    h4{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.72px;
+    }
+
+    h5{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .p-ramales{
+        font-size: 18px;
+    }
+
+    .p-referencia{
+        font-size: 16px;
+    }
+
+/*-----Header-----*/
+
+    #menu-toggle:checked + .menu-icono + .botonera-header {
+        display: flex;
+    }
+    #menu-toggle:checked + .menu-icono {
+        background-image: url('img/vectores/menu-hamburguesa.svg');
+        width: 26px;
+        height: 19px;
+    }
+
+    header nav{
+        padding: 20px 30px 13px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+    .botonera-header {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 40px;
+        width: 100%;
+        height: 100vh;
+        background-color: #008EDB;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 200px;
+        transition: background 0.4s ease;
+        padding: 20px 50px;
+    }
+
+    .botonera-header li {
+        display: flex;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .menu-icono {
+        display: flex;
+        z-index: 1;
+        background-image: url('img/vectores/menu-hamburguesa.svg');
+        background-size: cover;
+        width: 26px;
+        height: 19px;
+        transition: background-image 0.4s ease;
+    }
+
+/*-----Index-----*/
+
+    .texto-superpuesto{
+    top: 150px;
+    left: 50%;
+}
+
+    .subt-superpuesto{
+        top: 220px;
+        left: 50%;
+        width: 50%;
+    }
+
+    .flecha {
+        position: absolute;
+        top: 260px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: salto 1.5s infinite ease-in-out;
+        height: 50px;
+        width: auto;
+    }
+
+    .separador-ind{
+        display: none;
+    }
+
+    .titulo-box-azul img{
+        width: 50px;
+        height: auto;
+    }
+
+    .estado-ramales{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .r-electricos-titulo , .r-diesel-titulo , .r-larga-titulo{
+        border-radius: 50px 50px 0px 0px;
+    }
+
+    .referencia{
+        padding-left: 27px;
+    }
+
+    .box-blanca{
+        padding: 10px 95px;
+    }
+
+    .oculto-mobile , .tweets{
+        display: none;
+    }
+
+    .tweets-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .t-mult-mobile{
+        font-size: 24px;
+    }
+
+    .dos-columnas{
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .tema-oficial iframe{
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .reclamos-ind{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reclamos-ind h4{
+        width: 80%;
+        text-align: center;
+    }
+
+    .separador-mobile{
+        width: 590px;
+        height: auto;
+    }
+
+    .div-footer{
+        padding: 37px 30px 37px 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+    }
+}
