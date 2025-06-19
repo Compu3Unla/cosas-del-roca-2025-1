@@ -41,12 +41,12 @@ h2{
 }
 
 h3{
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 600;
 }
 
 h4{
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: 0.72px;
 }
@@ -133,7 +133,7 @@ footer{
 }
 
 
-/*index*/
+/*-----------------------------INDEX-------------------------------*/
 
 
 .estado-servicios{
@@ -442,6 +442,61 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------------CONTACTO-----------------------------*/
 .contacto{
     display: flex;
@@ -452,7 +507,7 @@ footer{
     margin-bottom: 150px;
     gap: 40px;
 }
-/*columna derecha*/
+/*-----columna derecha-----*/
 .izquierda{
     display: flex;
     flex-direction: column;
@@ -476,7 +531,7 @@ footer{
     gap: 30px;
     max-width: 834px;
 }
-/*columna derecha   FORMULARIO*/
+/*-----columna derecha formulario-----*/
 .derecha{
     display: flex;
     align-items: flex-start;
@@ -517,6 +572,7 @@ footer{
 .botones-form{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 
@@ -527,7 +583,7 @@ footer{
 }
 .boton-enviar:hover{
     background-color: #FFED00;
-    border: none;
+    border:#008EDB 2px solid;
     color: #1D1D1B;
 }
 
@@ -553,6 +609,8 @@ input{
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
     color: #F0F0F0;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 16px;
 }
 
 input::placeholder {
@@ -570,12 +628,24 @@ select{
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
     color: #006da7;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 16px;
 }
 textarea{
     background-color: #008EDB;
     border: 0px;
     border-bottom: #F0F0F0 2px solid;
     padding-top: 20px;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 16px;
+}
+
+.check-texto{
+    display: flex;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 15px;
+    align-items: center;
+    gap: 5px;
 }
 
 
@@ -607,13 +677,49 @@ textarea{
     grid-gap: 20px;
 }
 
+.grid-container img:hover{
+    width: 205px;
+    height: 206px;
+}
+
 .boton-ver-mas{
     background-color: #FFED00;
     padding: 10px;
     margin-bottom: 40px;
 }
 
+/*-----galeria de prueba-----*/
 
+.galeria-roca-popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.popup-completo{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(23, 22, 20, 0.70);
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 85px;
+    padding: 100px 0px;
+}
+
+.popup-completo:target{
+    display: flex;
+}
+
+.cruz-popup{
+    background-image: url('img/vectores/icon-cruz.svg');
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    background-position: center;
+}
 
 
 
@@ -1011,18 +1117,13 @@ textarea{
 
 /*---------------------------HORARIOS-----------------------------*/
 
-
-/* se generaba scrol horizontal y tambien la section alerta quedaba por debajo del header por tener position fixed,
-encontre esta manera de solucionarlo */
-
 .main-horarios {
     max-width: 100%;
     overflow-x: hidden;  
     padding-top: 100px;     
 }
 
-
-/* SECTION ALERTA */
+/*-----section alerta----- */
 
 .slider {
     overflow: hidden;
@@ -1044,7 +1145,6 @@ encontre esta manera de solucionarlo */
     justify-content: space-between;
     width: 100%;
 }
-
 
 .slider-track {
     display: flex;
@@ -1083,17 +1183,94 @@ encontre esta manera de solucionarlo */
     padding: 10px 70px;
 }
 
-.boton-info p {
-    font-size: 20px;
-}
-
-div a {
-    padding: 5px;
-}
-
 .boton-info:hover{
     background-color: black;
     color: #F0F0F0;
+}
+
+.separador {
+    background-color: #F0F0F0;
+}
+
+
+/*-----section horarios----- */
+
+.titulo-horarios {
+    display: flex;
+    align-items: end;
+}
+
+.titulo-horarios div {
+    display: flex;
+    align-items: center;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 10px 5px;
+}
+
+.titulo {
+    background-color: #008EDB;
+    color: #F0F0F0;
+    padding: 1px 50px 0px 50px;
+    letter-spacing: 2px;
+}
+
+.input1, .input2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #008EDB;
+    color: #F0F0F0;
+    padding: 8px 16px;
+    width: 230px;
+    margin: 5px;
+}
+
+.espacio, .espacio2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.boton-buscar {
+    background-color: #FFED00;         
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 80px;
+    display: block;
+    margin: 0 auto;   
+    border: none;
+}
+
+.boton-buscar:hover {
+    background-color: black;
+    color: #F0F0F0;
+}
+
+.inputs-horarios {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.gap-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*-----img mapa-----*/
+
+.mapa-img {
+    width: 100%;
+    max-width: 1724px;
+    height: auto;
 }
 
 
@@ -1706,12 +1883,12 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
 
 @media screen and (max-width: 600px){
     
-/*-----Estilos-----*/
+    /*-----Estilos-----*/
 
     h1{
     font-size: 60px;
     font-weight: 500;
-}
+    }
 
     h2{
         font-size: 18px;
@@ -1742,7 +1919,7 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
         font-size: 16px;
     }
 
-/*-----Header-----*/
+    /*-----Header-----*/
 
     #menu-toggle:checked + .menu-icono + .botonera-header {
         display: flex;
@@ -1758,7 +1935,7 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
         display: flex;
         justify-content: space-between;
         align-items: center;
-}
+    }
 
     .botonera-header {
         display: none;
@@ -1793,12 +1970,12 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
         transition: background-image 0.4s ease;
     }
 
-/*-----Index-----*/
+    /*-----Index-----*/
 
     .texto-superpuesto{
     top: 150px;
     left: 50%;
-}
+    }
 
     .subt-superpuesto{
         top: 220px;
@@ -1888,7 +2065,6 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
         justify-content: center;
         align-items: center;
         gap: 50px;
-
     }
 }
 
