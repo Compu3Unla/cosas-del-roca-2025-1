@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <title>Contacto</title>
     <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/gif" href="cosas-del-roca-favicon.gif">
 </head>
 <body>
     <header>
-        <div>
+        <nav>
             <a href="index.html"><img src="img/vectores/logo.svg" alt="Logo Cosas del Roca" width="151px" height="37px"></a>
-            <nav >
-                <ul class="botonera-header">
-                    <li class="boton-nav"><a href="horarios.html">horarios</a></li>
-                    <li class="boton-nav"><a href="memes.html">memes</a></li>
-                    <li class="boton-nav"><a href="tienda.html">tienda</a></li>
-                    <li class="boton-nav"><a href="contacto.html">contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icono"></label> 
+            <ul class="botonera-header">
+                <li class="boton-nav"><a href="horarios.html">horarios</a></li>
+                <li class="boton-nav"><a href="memes.html">memes</a></li>
+                <li class="boton-nav"><a href="tienda.html">tienda</a></li>
+                <li class="boton-nav"><a href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="contacto">
@@ -43,7 +44,7 @@
                     </div>
                     <div class="form-abajo">
                         <div class="casillas">
-                            <input type="text" name="nombre y apellido" id="nombre y apellido" maxlength="30" placeholder="Nombre y apellido" required>
+                            <input type="text" name="nombre y apellido" id="nombreyapellido" maxlength="30" placeholder="Nombre y apellido" required>
                             <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
                             <input type="email" name="correo electronico" id="correo electronico" placeholder="Correo electrónico" required>
                             <select id="mi-selector" name="mi-selector">
@@ -54,7 +55,7 @@
                             <textarea name="Comentario" id="comentario" placeholder="Comentario"></textarea>
                         </div>
                         <div class="botones-form">
-                        <label><input type="checkbox" name="noticias" value="Quiero recibir noticias de último momento" id="recibir">Quiero recibir noticias de último momento</label>
+                        <label class="check-texto"><input type="checkbox" name="noticias" value="Quiero recibir noticias de último momento" id="recibir">Quiero recibir noticias de último momento</label>
                         <input class="boton-enviar" type="submit" value="Enviar">
                         </div>      
                     </div>

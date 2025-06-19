@@ -41,12 +41,12 @@ h2{
 }
 
 h3{
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 600;
 }
 
 h4{
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: 0.72px;
 }
@@ -232,6 +232,9 @@ footer{
     height: auto; 
     width: 100vw;
     position: relative;
+    height: 100vh; 
+    width: 100vw;
+    overflow: hidden;
 }
 
 .portada img {
@@ -266,25 +269,35 @@ footer{
   }
 }
 
+
 .separador img{
     width: 100%;
     height: auto;
+
+.separador img {
+    width: 100%;
+    height: 100%;
 }
 
-
-/*-----Seccion donar-----*/
 .donar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F0F0F0;
+    padding: 120px 10%;
+    background-color: #f4f4f4;
     flex-wrap: wrap;
+
     margin: 150px 300px;
+
 }
 
 .texto-donar {
     flex: 1;
+
     max-width: 50vw;
+
+    max-width: 84vh;
+
 }
 
 .texto-donar h3 {
@@ -306,17 +319,16 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 250px;
 }
 
 .btn-donar {
     background-color: #008EDB;
     color: white;
     text-decoration: none;
-    padding: 10px 100px;
+    padding: 10px 80px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    font-size: 35px;
     border: none;
     cursor: pointer;
 }
@@ -330,7 +342,7 @@ footer{
 /*-----Seccion remeras------*/
 .tienda {
     text-align: center;
-    padding: 60px 0 10px;
+    padding: 60px 20px;
     background-color: #008EDB;
 }
 
@@ -389,7 +401,7 @@ footer{
 }
 
 .info button {
-    background-color: #008EDB;
+    background-color: #0087d2;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -420,20 +432,8 @@ footer{
     font-weight: lighter;
 }
 
-.contenedor {
-    display: flex;
-    justify-content: center;
-    background-color: #008EDB; 
-    padding-bottom: 70px;
-    text-align: center;
-}
 
-.bloques {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
+
 
 .boton {
     background-color: #f1f1f1;
@@ -449,6 +449,8 @@ footer{
     background-color: #FFED00;
     color: #1D1D1B;
 }
+
+
 
 
 
@@ -595,7 +597,36 @@ textarea{
 
 
 
+.galeria-roca-popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
 
+.popup-completo{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(23, 22, 20, 0.70);
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 85px;
+    padding: 100px 0px;
+}
+
+.popup-completo:target{
+    display: flex;
+}
+
+.cruz-popup{
+    background-image: url('img/vectores/icon-cruz.svg');
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    background-position: center;
+}
 
 
 
@@ -942,8 +973,6 @@ textarea{
 /*---------------------------HORARIOS-----------------------------*/
 
 
-/* se generaba scrol horizontal y tambien la section alerta quedaba por debajo del header por tener position fixed,
-encontre esta manera de solucionarlo */
 
 .main-horarios {
     max-width: 100%;
@@ -952,7 +981,7 @@ encontre esta manera de solucionarlo */
 }
 
 
-/* SECTION ALERTA */
+/*----- SECTION ALERTA----- */
 
 .slider {
     overflow: hidden;
@@ -974,7 +1003,6 @@ encontre esta manera de solucionarlo */
     justify-content: space-between;
     width: 100%;
 }
-
 
 .slider-track {
     display: flex;
@@ -1013,17 +1041,100 @@ encontre esta manera de solucionarlo */
     padding: 10px 70px;
 }
 
-.boton-info p {
-    font-size: 20px;
-}
-
-div a {
-    padding: 5px;
-}
 
 .boton-info:hover{
     background-color: black;
     color: #F0F0F0;
+}
+
+
+.separador {
+    background-color: #F0F0F0;
+}
+
+
+.titulo-horarios {
+    display: flex;
+    align-items: end;
+}
+
+.titulo-horarios div {
+    display: flex;
+    align-items: center;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 10px 5px;
+}
+
+.titulo {
+    background-color: #008EDB;
+    color: #F0F0F0;
+    padding: 1px 50px 0px 50px;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #008EDB;
+    color: #F0F0F0;
+    padding: 8px 16px;
+    width: 230px;
+    margin: 5px;
+}
+
+.input p {
+    font-size: 16px;
+}
+
+.espacio {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.boton-buscar {
+    background-color: #FFED00;         
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 80px;
+    display: block;
+    margin: 0 auto;   
+    border: none;
+}
+
+.boton-buscar:hover {
+    background-color: black;
+    color: #F0F0F0;
+}
+
+
+.inputs-horarios {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.gap-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* IMG MAPA */
+.mapa-img {
+    width: 100%;
+    max-width: 1724px;
+    height: auto;
 }
 
 
@@ -1603,4 +1714,195 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
 
 .separador {
     background-color: #F0F0F0;
+}
+
+
+
+/*-----------------------------RESPONSIVE-------------------------------*/
+
+@media screen and (max-width: 600px){
+    
+    /*-----Estilos-----*/
+
+    h1{
+    font-size: 60px;
+    font-weight: 500;
+    }
+
+    h2{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    h3{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    h4{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.72px;
+    }
+
+    h5{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .p-ramales{
+        font-size: 18px;
+    }
+
+    .p-referencia{
+        font-size: 16px;
+    }
+
+    /*-----Header-----*/
+
+    #menu-toggle:checked + .menu-icono + .botonera-header {
+        display: flex;
+    }
+    #menu-toggle:checked + .menu-icono {
+        background-image: url('img/vectores/menu-hamburguesa.svg');
+        width: 26px;
+        height: 19px;
+    }
+
+    header nav{
+        padding: 20px 30px 13px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .botonera-header {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 40px;
+        width: 100%;
+        height: 100vh;
+        background-color: #008EDB;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 200px;
+        transition: background 0.4s ease;
+        padding: 20px 50px;
+    }
+
+    .botonera-header li {
+        display: flex;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .menu-icono {
+        display: flex;
+        z-index: 1;
+        background-image: url('img/vectores/menu-hamburguesa.svg');
+        background-size: cover;
+        width: 26px;
+        height: 19px;
+        transition: background-image 0.4s ease;
+    }
+
+    /*-----Index-----*/
+
+    .texto-superpuesto{
+    top: 150px;
+    left: 50%;
+    }
+
+    .subt-superpuesto{
+        top: 220px;
+        left: 50%;
+        width: 50%;
+    }
+
+    .flecha {
+        position: absolute;
+        top: 260px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: salto 1.5s infinite ease-in-out;
+        height: 50px;
+        width: auto;
+    }
+
+    .separador-ind{
+        display: none;
+    }
+
+    .titulo-box-azul img{
+        width: 50px;
+        height: auto;
+    }
+
+    .estado-ramales{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .r-electricos-titulo , .r-diesel-titulo , .r-larga-titulo{
+        border-radius: 50px 50px 0px 0px;
+    }
+
+    .referencia{
+        padding-left: 27px;
+    }
+
+    .box-blanca{
+        padding: 10px 95px;
+    }
+
+    .oculto-mobile , .tweets{
+        display: none;
+    }
+
+    .tweets-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .t-mult-mobile{
+        font-size: 24px;
+    }
+
+    .dos-columnas{
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .tema-oficial iframe{
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .reclamos-ind{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reclamos-ind h4{
+        width: 80%;
+        text-align: center;
+    }
+
+    .separador-mobile{
+        width: 590px;
+        height: auto;
+    }
+
+    .div-footer{
+        padding: 37px 30px 37px 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
 }
